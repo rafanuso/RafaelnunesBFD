@@ -1,0 +1,15 @@
+/*nome1 = prompt("Qual o seu nome?")
+nome2 = prompt("qual o seu nome?")
+console.log("Olá " + nome1 +" e "+ nome2 + " ! ")
+*/
+/*dado = prompt("Informe um dado:")
+dado2 = Number(dado)
+console.log("O dado informadfo é do tipo: " + dado2)
+*/
+idade = 5
+//console.log(idade--)
+//console.log(idade++)
+//console.log(idade)
+console.log(++idade)
+console.log(--idade)
+console.log(idade)
