@@ -1,0 +1,15 @@
+/*var n1 = Number(prompt("informe a nota 1"))
+var n2 = Number(prompt("informe a nota 2"))
+var n3 = Number(prompt("informe a nota 3"))
+var n4 = Number(prompt("informe a nota 4"))
+var n5 = Number(prompt("informe a nota 5"))
+// var nota = Number
+nota = parseFloat(n1 + n2 + n3 + n4 + n5)/5
+
+ console.log("A media entre as notas é", nota)
+*/
+
+var fahrenheit = Number(prompt("informe fahrenheit" ))
+//var celsius = Number(prompt("informe celsius" ))
+valor = (fahrenheit -32) * 5/9
+console.log("A temperatura convertida para celsius é, " + valor)
