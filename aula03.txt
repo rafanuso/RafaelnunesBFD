@@ -7,9 +7,22 @@ var n5 = Number(prompt("informe a nota 5"))
 nota = parseFloat(n1 + n2 + n3 + n4 + n5)/5
 
  console.log("A media entre as notas é", nota)
-*/
+
 
 var fahrenheit = Number(prompt("informe fahrenheit" ))
 //var celsius = Number(prompt("informe celsius" ))
 valor = (fahrenheit -32) * 5/9
 console.log("A temperatura convertida para celsius é, " + valor)
+
+ a = parseFloat(prompt("qual valor de a"))
+ b = parseFloat(prompt("qual o valor de b"))
+
+hipotenusa = (a**2 + b**2) **0.5
+
+console.log("O calculo da hipotenusa é " + hipotenusa)
+*/
+
+peso = parseFloat(prompt("Qual é o seu peso? "))
+altura = parseFloat(prompt("Qual é a sua altura? "))
+imc = peso / (altura)**2
+console.log("O IMC é " + imc)
