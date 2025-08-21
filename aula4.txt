@@ -1,0 +1,172 @@
+
+1
+Bonus
+• R e d u z i r o n úme r odecasasdecimais
+46numero = 123.4567
+formatado = numero.toFixed(2)
+console.log(typeof(formatado)) // "string"
+console.log(formatado) // "123.46"
+Bonus (cont.)
+• Trocando ponto por vírgula47numero = 123.4567
+formatado = numero.toFixed(2).replace('
+.
+'
+,
+'
+,')console.log(formatado) // "123,46"
+Bonus (cont.)
+• Trocando ponto por vírgula(cont.)48// Declaração das variáveis
+peso = 0
+altura = 0
+// Leitura dos valores
+peso = prompt('Informe o seu peso').replace('
+,
+'
+,
+'.')
+altura = prompt('Informe a sua altura').replace('
+,
+'
+,
+'.')
+// Cálculo do IMC
+imc = (peso / Math.pow(altura, 2)).toFixed(2).replace('.'
+,
+'
+,
+')
+// Impressão do resultado
+console.log('Seu IMC é ' + imc)
+Desafio
+• Desenvolva uma soluçãoquereceba02 (dois) números cada qual emumavariável.
+• O objetivo é trocar os valores entreasvariáveis , sendo que a primeirateráovalor da segunda e vice-versa.
+• Ao final imprimir os valores finaisdasvariáveis
+49
+Desafio: resolução
+50// Leitura dos valores
+num1 = parseFloat(prompt("Informe o primeiro número"))num2 = parseFloat(prompt("Informe o segundo número"))// Troca dos valores
+num1 = num1 + num2
+num2 = num1 - num2
+num1 = num1 - num2
+// Impressão do resultado
+console.log("Num 1:
+" + num1)
+console.log("Num 2:
+" + num2)
+Desvios condicionais
+• Desvios condicionais
+– São instruções que alteramofluxodoprograma dependendodeumacondição verdadeira ou falsa.
+– Ex.: "Se algo acontecer, façaisso. Casocontrário, faça outra coisa.
+"
+51
+Desvios condicionais
+• O papel dos valores booleanos
+– Toda condição retorna true oufalse.
+• Operadores de comparação:
+– == (igualdade, comconversão detipo)
+– === (igualdade estrita, mais recomendado)– != (diferente, comconversão detipo)
+– !== (diferente estrito)
+– >
+,
+<
+,
+>=
+,
+<=
+52
+Desvios condicionais
+•
+== Com conversão de tipo– Compara apenas os valores.
+– Se os t ipos foremdiferentes , tentaconverter antes da comparação.
+– Pode gerar resultados inesperados.
+53
+Desvios condicionais
+•
+== Com conversão de tipo(cont.)
+545 ==
+"5" // true → converte string "5" paranúmero50 == false // true → converte false para 0
+null == undefined // true → regra especial da linguagem*Regra especial: qualquer outra comparação comeles retornafalse,amenos que seja com eles mesmos.
+Desvios condicionais
+•
+=== Semconversão de tipo– Compara valor e tipo.
+– Mais seguro e previsível.
+– Não faz conversões automáticas.
+55
+Desvios condicionais
+•
+=== Semconversão de tipo(cont.)
+565 ===
+"5" // false → tipos diferentes (numbervsstring)0 === false // false → tipos diferentes (numbervsboolean)null === undefined // false → tipos diferentes
+Desvios condicionais • Estruturas básicas – if – if ... else – if ... else if ... else – Operador ternário – switch 57
+Desvios condicionais
+• Estruturas básicas (cont.)
+– if: Executa umbloco de códigoseacondição for verdadeira.
+58idade = 20
+if (idade >= 18) {
+console.log("Você é maior de idade.")
+}
+Desvios condicionais
+• Estruturas básicas
+– if ... else: Adiciona uma alternativaparaquando a condição for falsa.
+59idade = 16
+if (idade >= 18) {
+console.log("Você é maior de idade.")
+} else {
+console.log("Você é menor de idade.")
+}
+Desvios condicionais
+• Estruturas básicas
+– if ... else if ... else: Permite testar váriascondições.
+60nota = 6
+if (nota >= 9) {
+console.log("Excelente!")
+} else if (nota >= 6) {
+console.log("Aprovado!")
+} else {
+console.log("Reprovado.")
+}
+Desvios condicionais
+• Estruturas básicas
+– Operador ternário: (forma curta doif...else).
+Bom para condições simples.
+61idade = 16
+situacao = (idade >= 18) ? "Adulto"
+:
+"Menor"
+console.log(situacao)
+Desvios condicionais
+• Estruturas básicas
+– s w i t c h : U s a d o q u a n d o hámui tasalternativas para o mesmo valor.
+62
+Desvios condicionais
+63dia = 3
+switch (dia) {
+case 1:
+nomeDia =
+"Segunda"
+;
+break
+case 2:
+nomeDia =
+"Terça"
+break
+case 3:
+nomeDia =
+"Quarta"
+break
+default:
+nomeDia =
+"Dia inválido"
+}
+console.log(nomeDia)
+• Atenção:
+– Sempre usar breakparaevitar "cair" nopróximocaso.– defaul t é opcional, masrecomendado.
+Desvios condicionais
+• Boas práticas
+– Prefi ra === e !== para evi tar conver sõesinesperadas.
+– Mantenha as condições claras e simples.
+– Use parênteses para deixar a leitura maisfácil,
+mesmo quando não obrigatórios.
+– Não abuse do ternário emcondições muitolongas (afeta legibilidade).
+64
+91
