@@ -1,0 +1,21 @@
+faixaEtaria = prompt("informe a faixa etária")
+
+if (faixaEtaria <= 12) {
+
+console.log("classificação: livre")
+
+} else if (faixaEtaria >= 12 && faixaEtaria <= 14) {
+
+console.log("classificação: +12")
+
+}
+  else if (faixaEtaria >= 15 && faixaEtaria <= 17) {
+
+console.log("classificação: +15")
+
+}
+  else if (faixaEtaria >=18 ){
+
+ console.log("classificação: +18")
+
+}
