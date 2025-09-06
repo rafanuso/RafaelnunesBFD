@@ -1,0 +1,11 @@
+valorInicial = parseFloat(prompt("Informe o Item 1:" ))
+valorTotal = 0
+//item = prompt(parseFloat)
+item = 1
+while(valorInicial > 0){
+  
+valorTotal += valorInicial
+item++
+valorInicial = parseFloat(prompt("Informe o Item:" + item ))
+}
+console.log("Total da compra" + valorTotal)
