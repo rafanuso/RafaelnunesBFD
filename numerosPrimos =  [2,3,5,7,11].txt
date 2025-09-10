@@ -1,0 +1,80 @@
+/*numerosPrimos =  [2,3,5,7,11]
+arrayDiversos = [1.1, ,true, "a"]
+
+console.log(typeof(numerosPrimos))
+
+console.log(numerosPrimos)
+console.log(arrayDiversos)
+*/
+
+
+/*fibonacci = [1,2,3,5,8,13]
+
+console.log(fibonacci)
+console.log(fibonacci[0])
+
+fibonacci[0] = 9
+console.log(fibonacci)
+
+fibonacci[0] = 1
+fibonacci[6] = 21
+console.log(fibonacci)
+
+tamanho = 0 
+fibonacci = [1,2,3,5,8,13]
+console.log(tamanho)
+
+tamanho = fibonacci.unshift(0)
+console.log(tamanho)
+console.log(fibonacci)
+
+tamanho = fibonacci.push(21)
+console.log(tamanho)
+console.log(fibonacci)
+
+fibonacci = [1,2,3,5,8,13]
+console.log(fibonacci)
+delete fibonacci[4]
+console.log(fibonacci)
+
+
+fibonacci = [1,2,3,5,8,13]
+console.log(fibonacci)
+fibonacci.length = 4
+console.log(fibonacci)
+*/
+
+//fibonacci = [1,2,3,5,8,13]
+//console.log(fibonacci.length)
+
+/*fibonacci.splice(1,2)
+console.log(fibonacci.length)
+console.log(fibonacci)
+
+fibonacci.splice(1,0,"tres","quatro")
+console.log(fibonacci.length)
+console.log(fibonacci)
+
+fibonacci = [1,2,3,5]
+
+for (indice = 0; indice < fibonacci.length; indice++){
+console.log(fibonacci[indice])
+}
+fibonacci = [1,2,3,"BFD"]
+
+for (elemento in fibonacci){
+console.log(fibonacci[elemento])
+}
+*/
+ //faça um programa que receba N numeros inteiros (o usuario deve informar), armazene em um array e, mostre ao final o maior e o menor dos números.
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseInt(prompt("Digite um número: "))
+
+
+}
+
+
+console.log("O maior numero é: " + maior)
+console.log("O menor numero é: " + menor)
