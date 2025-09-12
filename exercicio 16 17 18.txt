@@ -1,0 +1,90 @@
+//exercício 15 somar os elementos de um array e mostrar o resultado
+
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseInt(prompt("Digite um número: "))
+}
+
+var total = 0
+
+for (var a = 0; a < num.length; a++ ){
+  total = total + num[a]
+}
+console.log(total)
+
+
+// exercício 16 receber 5 valores e calcular a media desses valores.
+
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseInt(prompt("Digite um número: "))
+}
+
+var total = 0
+
+for (var a = 0; a < num.length; a++ ){
+  total = total + (num[a])/5
+}
+console.log(total)
+
+
+//exercício 17 código que mostra o maior valor 
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseInt(prompt("Digite um número: "))
+}
+
+var total = 0
+
+for (var a = 1; a < num.length; a++ ){
+  if(num[a]>total){
+    total = num[a]
+}
+}
+console.log(total)
+
+// exercício 17 código que mostra o menor valor 
+
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseInt(prompt("Digite um número: "))
+}
+
+var  menor = num[0]
+
+for (var a = 1; a < num.length; a++ ){
+ var valorAtual = num[a]
+  if(num[a]<menor)
+  menor = num[a]
+}
+
+console.log(menor)
+
+// exercício 18 Criar um programa que receba N números (o usuário deve informar), calcule a media destes números e imprima média e QUAIS dos números informados maior ou igual ao valor da media(somente os maiores)
+
+num = []
+
+for (indice = 0; indice < 5; indice++)  {
+  num [indice] = parseFloat(prompt("Digite um número: "))
+}
+
+var total = 0
+
+for (var a = 0; a < num.length; a++ ){
+  total = total + (num[a])/5
+
+}
+
+for (var a = 1; a < num.length; a++ ){
+
+  if(num[a]>total)
+   total = num[a]
+  
+}
+console.log(total)
+ 
+
