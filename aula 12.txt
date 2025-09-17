@@ -1,0 +1,131 @@
+/*var totalGeral = 0; // guarda o total da compra
+var continuar = "s"; // controla se o usuário quer continuar
+
+console.log("    CUPOM DA VENDA    " + 
+            "\n\n-------------------- " + 
+            "\n ITEM   DESCRIÇÃO" + 
+            "\n\nqtd   valor    total" + 
+            "\n--------------------");
+
+var item = 1; // contador dos itens
+
+// estrutura de repetição
+while (continuar === "s") {
+    var prod = prompt("Digite o produto: ");
+    var preco = parseFloat(prompt("Insira o valor da unidade: ").replace(",","."));
+    var qtd = parseInt(prompt("Digite a quantidade: ").replace(",","."));
+    
+    var subtotal = preco * qtd; // calcula o valor daquele produto
+    totalGeral = totalGeral + subtotal; // acumula no total geral
+
+    // imprime o produto no cupom
+    console.log(item + "   " + prod);
+    console.log(qtd + "     " + preco + "      " + subtotal.toFixed(2) + "\n--------------------");
+
+    item++; // soma 1 ao número do item
+    continuar = prompt("Deseja inserir outro produto? (s/n)"); // pergunta se continua
+}
+
+// no final mostra o total geral
+console.log("\nTotal R$ " + totalGeral.toFixed(2));*/
+
+/*function somar(a,b){
+  return a + b
+}
+
+resultado = somar(5,7)
+console.log("o resultado da é: " + resultado)
+
+function somar(a,b){return a + b}
+
+
+soma = (a,b)=>{
+return a + b
+}
+
+dobro = x => x * 2
+
+console.log(soma(5,7))
+console.log(dobro(6))
+var globalVar = "Eu sou global"
+
+function minhaFuncao(){
+console.log(globalVar)
+}
+
+minhaFuncao();
+console.log(globalVar)
+ 
+
+function outraFuncao(){
+var localVar = "eu sou local"
+ console.log(localVar)
+
+}
+outraFuncao()
+console.log(localVar)
+
+//nesse caso o a variavel dentro do bloco do if não faz referência a variavel global
+var idade = 18
+if (idade >= 16) {
+  var resultado = "pode votar"
+}
+console.log(resultado)
+function exemploEscopoBloco() {
+var x = 1
+let y = 2
+const z = 3
+
+if (true) {
+var x = 10
+let y = 20
+const z = 30
+
+console.log(x) // imprime 10
+console.log(y) // imprime 20
+console.log(z) // imprime 30
+}
+
+console.log(x) //imprime 10
+console.log(y) // imprime 2
+console.log(z) // imprime 3
+}
+exemploEscopoBloco()
+ 
+//fazer calculo de delta e raiz quadrada 
+//ler tres valores e mostrar a raiz 
+
+a = parseInt(prompt("valor de a: "))
+b = parseInt(prompt("valor de b: "))
+c = parseInt(prompt("valor de c: "))
+
+var delta = b*b-4*a*c
+
+if (delta > 0) {
+let x1=(-b+Math.sqrt(delta))/(2*a);
+let x2=(-b-Math.sqrt(delta))/(2*a);
+
+console.log("x1 " = + x1)
+console.log("x2 " = + x2)
+}
+else{
+console.log("Solução não real");
+}
+//codigo precisa funcionar
+*/
+
+
+/*var fahrenheit = Number(prompt("informe fahrenheit" ))
+//var celsius = Number(prompt("informe celsius" ))
+valor = (fahrenheit -32) * 5/9
+console.log("A temperatura convertida para celsius é, " + valor)
+
+
+
+function fahrenheit(f){
+return (f-32)*(5/9)
+}
+console.log(fahrenheit (32) + "°C" )
+console.log(fahrenheit (-40) + "°C" )
+
+*/
