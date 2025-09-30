@@ -1,0 +1,61 @@
+
+class Cachorro {
+  nome: string = ""
+  peso: number = 0
+  cor: string = ""
+ 
+  private energia: number = 100
+
+  constructor (nome: string, cor: string){
+ 
+   this.nome = nome
+   this.cor = cor
+  
+ }
+    emitirSom(): void {
+      if (this.energia >= 30){
+      console.log("au-au")
+      this.energia -= 20
+      }
+
+    }
+
+     ouvirSom(som: string): void{
+
+      if (som == this.nome){
+       this.emitirSom()
+      }
+   }
+      comer(comida : Comida){
+      this.energia += comida.energia
+       if (this.energia > 100){
+        this.energia = 100
+
+       }
+   
+     }
+}
+      class Comida{
+       nome: string = ""
+       energia: number = 0
+
+    constructor (nome: string, energia: number){
+      this.nome = nome
+      this.energia = energia
+    }
+    
+   }
+ 
+const cachorro: Cachorro = new Cachorro("sadan", "caramelo")
+
+ for (let contador = 1; contador <= 10; contador ++){
+  console.log(contador)
+  cachorro.emitirSom()
+ }
+  cachorro.comer(new Comida("Osso", 50))
+
+  for (let contador = 11; contador <= 20; contador++){
+    console.log(contador)
+    cachorro.emitirSom()
+  }
+cachorro.ouvirSom("sadan")
