@@ -59,3 +59,44 @@ const cachorro: Cachorro = new Cachorro("sadan", "caramelo")
     cachorro.emitirSom()
   }
 cachorro.ouvirSom("sadan")
+
+
+// outro modelo de exercicio, implementando (interface)
+
+interface Carro{
+  partes: Array<string>
+  montar(): void
+}
+ class CarroModeloA implements Carro{
+  partes: Array<string> = ["motor1.0,cambio_manual"]
+
+
+  montar(): void{
+  console.log(this.partes.join("."))
+
+ }
+ }
+  //const carroA: CarroModeloA = new CarroModeloA()
+  //carroA.montar()
+
+  //const carroX: Carro = new CarroModeloA()
+  //carroX.montar()
+
+  class CarroModeloB implements Carro{
+  partes: Array<string> = ["motor2.0,cambio_automatico"]
+
+  montar(): void {
+  console.log(this.partes.join(";"))
+ }
+
+ }
+   const carroA: CarroModeloA = new CarroModeloA()
+   const carroB: CarroModeloB = new CarroModeloB()
+
+   function montarCarros(carros: Array<Carro>){
+
+  carros.forEach((carro)=> carro.montar())
+}
+  montarCarros([carroA, carroB])
+
+
